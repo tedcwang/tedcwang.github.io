@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body>
+<main>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+
+    <div class="grid-column-layout">
+        <div id="slide" class="slideshow" style="display: block;">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img class="pic" src="disneyad.jpg" style="width:700px; height: 410px;">
+                <div class="text"><a href="Shop">Get Disney+, on us.</a></div>
+            </div>
+            
+            <div class="mySlides fade" style="display: none;">
+                <div class="numbertext">2 / 3</div>
+                <img class="pic" src="savings.png" style="width:700px; height: 410px;">
+                <div class="text"><a href="Shop">More ways to save.</a></div>
+            </div>
+            
+            <div class="mySlides fade" style="display: none;">
+                <div class="numbertext">3 / 3</div>
+                <img class="pic src="tech.png" style="width:700px; height: 410px;">
+                <div class="text"><a href="Shop">The best in tech.</a></div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div class="navmenu">
+            <a href="index.html"><img class="logo" src="hiclipart.com.png" alt="Verizon Logo" style="width:200px; height:100px;"></a>
+            <div id="menu">
+                <ul>
+                    <li><a href="Phones">Phones</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="Shop">Shop</a></li>
+                    <li><a href="Support">Support</a></li>
+                    <li><a href="Business">Business</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <i id="icon" class="fas fa-search fa-1.6x"></i>
+                <i id="icon" class="fas fa-bell fa-1.6x"></i>
+                <i id="icon" class="fas fa-shopping-cart fa-1.6x"></i>
+            </div>
+        </div>
+
+        <div class="ad">
+            <h2>More Holiday Magic.</h2>
+            <p>More deals. More wishes come true. All from the network that gives you more.</p>
+            <div class="adButton">
+            <p>Shop</p>
+            </div>
+        </div>
+    
+        <div class="phoneA">Apple iPhone 11 Pro
+            <img class="iPhone" src="iphone11.png" alt="iPhone 11 Pro" style="width: 200px; height: 300px;">
+            <p class="small">Starts at $41.66/mo</p>
+            <p class="small"><small>For 24 months, 0% APR financing
+                Retail price: $999.99</small></p>
+        </div>
+        <div class="phoneB">Samsung Galaxy Note10
+            <img class="Note" src="samsunggalaxynote.png" alt="Samsung Galaxy Note10" style="width: 200px; height: 300px;">
+            <p class="small">Starts at $39.58/mo</p>
+            <p class="small"><small>For 24 months, 0% APR financing
+                Retail price: $949.99</small></p>
+        </div>
+        <div class="phoneC">Google Pixel 3XL
+            <img class="Pixel" src="googlepixel3.png" alt="Google Pixel 3XL" style="width: 220px; height: 300px;">
+            <p class="small">Starts at $26.25/mo</p>
+            <p class="small"><small>For 24 months, 0% APR financing
+                Retail price: $1013.33</small></p>
+        </div>
+        <div class="phoneD">LG V50 ThinQ
+            <img class="LG" src="lgv50.png" alt="LG V50 ThinQ" style="width: 200px; height: 200px;">
+            <p class="smallOne">Starts at $41.66/mo</p>
+            <p class="small"><small>For 24 months, 0% APR financing
+                Retail price: $999.99</small></p>
+        </div>
+
+        <div class="gift">
+            <h2>More Amazing Gifts</h2>
+            <p>Want to make their holidays the happiest this year? Start with our best phones.</p>
+            <p class="more"><a href="plans.html">Shop More Phones</a></p>
+        </div>
+
+        <div class="app">
+            <h3>Do more on the app.</h3>
+            <p>Manage your account, claim rewards, and more with just a tap.</p>
+            <p><a href="app">Learn More</a></p>
+        </div>
+
+        <div class="VIP">
+            <h1>More holiday rewards, on us.</h1>
+            <p>New tech. Tasty eats. All-new rewards are waiting when you join Verizon Up.</p>
+            <p class="VIPlink"><a href="VIP">Learn More</a></p>
+            <img class="VIPimage" src="verizonuplogo.png" alt="Verizon Up Logo" style="width:300px; height:50px;">
+        </div>
+
+        <div class="footer">
+            <img class="footerImage" src="whitelogo.png" alt="Verizon White Logo" style="width:300px; height:120px;">
+            <p class="verizon">MY VERIZON Verizon Cloud Verizon Family Devices More</p>
+            <p class="brands">BRANDS Apple Samsung Google LG</p>
+            <p class="store">FIND A STORE Subscribe Sign Up</p>
+            <p class="info">ABOUT US News Privacy Legal Notes Customer Agreement</p>
+        </div>
+
+        <div class="footerTwo">
+            <p><small>Verizon Wireless 2019</small></p>
+        </div>
+    </div>
+</main>
+
+</body>
+
+</html>
